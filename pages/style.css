@@ -1,9 +1,222 @@
 html {
-  font-family: "Anonymus Pro", monospace;
+  font-family: "Anonymous Pro", monospace;
   font-size: 15px;
 }
 
+/* === Body Section === */
+
 body {
-  width: 95%;
   background-color: #fafafa;
+}
+
+/* ****************************************** HOME PAGE *******************************************/
+
+/* === Banner === */
+.main__div--banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(/assets/images/home_page/header_banner.jpg);
+  background-size: cover;
+  height: 550px;
+  color: #fafafa;
+  overflow: hidden;
+  align-content: space-evenly;
+}
+
+.main__div--banner > * {
+  margin-left: 15%;
+}
+
+.main__div--banner > h1 {
+  font-family: "Crimson Text";
+  font-size: 48px;
+  width: 30%;
+}
+
+.main__div--banner > h3 {
+  font-family: "Crimson Text";
+  font-size: 24px;
+  width: 37%;
+  font-weight: 300;
+}
+
+.div__input--btnShop {
+  text-decoration: none;
+  color: #fafafa;
+  background-color: transparent;
+  border: 3px solid;
+  padding: 16px;
+  border-radius: 5px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.div__input--btnShop:hover,
+.div__input--btnShop:focus {
+  background-color: #d54137;
+}
+
+/* === Main Article === */
+
+.main__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.main__article > h1 {
+  font-family: "Crimson Text";
+  font-size: 48px;
+}
+
+.main__article > label {
+  width: 20%;
+  height: 5px;
+  background-color: black;
+  opacity: calc(75%);
+  color: transparent;
+  margin-top: -45px;
+  margin-bottom: 50px;
+}
+
+/* === Main Overview === */
+
+.main__section--overview {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 1000px;
+  align-items: start;
+}
+
+/* === Main Product === */
+
+.section__div--columnProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 47.5%;
+  height: 100%;
+}
+
+.div__a--imagesProduct {
+  background: url(/assets/images/home_page/main_our_products.jpg);
+  background-size: cover;
+}
+
+.div__a--imagesGrocery {
+  background: url(/assets/images/home_page/main_grocery_items.jpg);
+  background-size: cover;
+}
+
+.div__a--imagesProduct,
+.div__a--imagesGrocery {
+  text-decoration: none;
+  color: #fafafa;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 43%;
+  transition: all ease-in-out 0.5s;
+  padding-left: 16px;
+}
+
+.div--sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  background-color: #7a5f45;
+  color: #fafafa;
+  padding-left: 16px;
+}
+
+.main__div--sale > h2 {
+  width: 50%;
+}
+
+.main__div--sale > p {
+  line-height: 25px;
+}
+
+.main__a--imagesLearn {
+  background: url(/assets/images/home_page/main_learn_how_to_make.jpg);
+  text-decoration: none;
+  color: #fafafa;
+  background-size: cover;
+  width: 47.5%;
+  height: 100%;
+  padding-left: 24px;
+  transition: all ease-in-out 0.5s;
+}
+
+/* Transitions */
+
+.div__a--imagesGrocery:hover,
+.div__a--imagesProduct:hover,
+.main__a--imagesLearn:hover {
+  scale: calc(102%);
+}
+
+/* === Main About === */
+
+.main__section--about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+}
+
+.main__a--imagesStory {
+  background: url(/assets/images/home_page/main_our_story.jpg);
+  background-size: cover;
+  text-decoration: none;
+  width: 98%;
+  height: 48%;
+  color: #fafafa;
+  padding-left: 24px;
+  transition: all ease-in-out 0.5s;
+}
+
+.section__div--rowImage {
+  display: flex;
+  justify-content: space-between;
+  height: 49%;
+}
+
+.div__a--imagesRecipe {
+  background: url(/assets/images/home_page/main_recipes.jpg);
+  background-size: cover;
+}
+
+.div__a--imagesIngredient {
+  background: url(/assets/images/home_page/main_natural_ingredients.jpg);
+  background-size: cover;
+}
+
+.div__a--imagesRecipe,
+.div__a--imagesIngredient {
+  width: 48%;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  color: #fafafa;
+  padding-left: 16px;
+  transition: all ease-in-out 0.5s;
+}
+
+/* Transition */
+.div__a--imagesRecipe:hover,
+.div__a--imagesIngredient:hover,
+.main__a--imagesStory:hover {
+  scale: calc(102%);
 }
