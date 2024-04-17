@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Sausages Dough",
+    "price": 19.99,
+    "image": "/assets/images/product_page/product_sausages_dough.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Croissant",
+    "price": 9.99,
+    "image": "/assets/images/product_page/product_croissant.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Garlic Bread",
+    "price": 15.99,
+    "image": "/assets/images/product_page/product_garlic_bread.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sugar Bagel",
+    "price": 5.99,
+    "image": "/assets/images/product_page/product_sugar_bagel.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Crunchy Bread",
+    "price": 7.99,
+    "image": "/assets/images/product_page/product_crunchy_bread.jpg"
+  }
+]
