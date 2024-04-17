@@ -1,0 +1,75 @@
+body{   
+      * {
+        padding: 0;
+        margin: 0 ;  
+        }
+      /*header*/   
+      nav.nav-bar { 
+        display: flex;
+        background-color: #fff5ea;
+        font-family: 'Anonymous Pro', monospace;  
+        justify-content: space-between;
+        height: 80px;
+        padding: 0px 20px;
+        align-items: center;
+        overflow: auto;
+      }
+
+      .nav-logo a{
+        font-size: 25px;
+        padding-left: 25px;
+        font-family: 'Anonymous Pro';
+      }
+      ul.nav-list{
+        list-style-type: none;
+      }
+      
+      li {             
+        display: inline;
+        font-size: 20px;       
+        list-style-type: none;
+        word-spacing: 20px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+      }
+      
+      .nav-list a{
+        color: black;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+      }
+      .nav-list a:hover{
+        border-bottom: 3px solid black;
+        justify-content: auto;
+      }
+      .nav-icon a{
+        padding-right: 25px;
+        justify-content: space-evenly;
+      }
+
+    /*product page*/
+    .main-prod_banner-top {
+      display: flex;
+      overflow: hidden;
+      max-width: 100%;
+      height: 640px;
+      background:url(/pages/images/product_page/product_banner.jpg);
+      background-size: cover;
+      background-position:center;
+    }
+    .main-prod_page-text h1{
+      padding-top: 50px;
+      text-align: center;
+      font-size: 96px;
+      font-family: 'Crimson Text';
+    }
+    .main-prod_page-text p{
+      padding:0px 200px;
+      font-family: 'Anonymous Pro';
+      font-size: 15px;
+      text-align: center;
+      word-spacing: 5px;
+      line-height: 20px;
+    }
+  }
