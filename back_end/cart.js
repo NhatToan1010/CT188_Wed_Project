@@ -60,10 +60,6 @@ const tempSaveCartItem = () => {
   localStorage.setItem("cart", JSON.stringify(carts));
 };
 
-const tempSaveCartQuantity = (quantity) => {
-  localStorage.setItem("cart quantity", JSON.stringify(quantity));
-};
-
 const addToCart = (product_id) => {
   let thisProduct = carts.findIndex((value) => value.product_id == product_id);
   if (carts.length <= 0) {
@@ -111,14 +107,27 @@ const getCartFromMemory = () => {
 const checkPrice = () => {
   carts.innerHTML = "";
   let totalPrice = 0;
+  let discount = 0.25;
+  let priceReduced = 0;
+  let count = 0;
   carts.forEach((cart) => {
     let thisProduct = listProducts.findIndex(
       (value) => value.id == cart.product_id
     );
     let productInfo = listProducts[thisProduct];
     totalPrice += productInfo.price * cart.quantity;
+    count += cart.quantity;
   });
-  alert("Your total price to pay is: $" + totalPrice.toFixed(2));
+  if (count <= 5) {
+    alert("Your total price to pay is: $" + totalPrice.toFixed(2));
+  } else {
+    priceReduced = totalPrice - totalPrice * discount;
+    alert(
+      "Your total price to pay is: $" +
+        priceReduced.toFixed(2) +
+        "\n(25% Discount)"
+    );
+  }
 };
 
 iconCart.addEventListener("click", () => {
