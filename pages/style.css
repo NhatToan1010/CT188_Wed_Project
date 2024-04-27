@@ -1,19 +1,20 @@
 html {
   font-family: "Anonymous Pro", monospace;
   font-size: 15px;
+  margin: -20px -10px;
 }
 
 html::-webkit-scrollbar {
   width: 0;
 }
 
-/* === Body Section === */
-
 body {
   background-color: #fafafa;
 }
 
 /* ****************************************** UTILS *******************************************/
+
+/* ****************************************** HEADER *******************************************/
 
 .container {
   text-align: center;
@@ -37,11 +38,13 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: medium;
+  text-decoration: none;
+  color: #000e;
 }
 
 .logo svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .listTab {
@@ -91,6 +94,71 @@ body {
   border-radius: 50%;
 }
 
+/* ****************************************** FOOTER *******************************************/
+
+footer {
+  background-color: #7a5f45;
+  color: #eee;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-title {
+  padding: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo svg {
+  margin-right: 5px;
+}
+
+.footer-socialMedia {
+  padding: 25px;
+}
+
+.socialIcon svg {
+  width: 32px;
+  height: 32px;
+  color: #eee;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.footer-listTab {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer-listTab li {
+  padding: 10px 20px 10px 20px;
+}
+
+.footer-listTab li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.footer-listTab li:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  position: relative;
+  left: 10%;
+}
+
 /* ****************************************** HOME PAGE *******************************************/
 
 /* === Banner === */
@@ -104,7 +172,6 @@ body {
   color: #fafafa;
   overflow: hidden;
   align-content: space-evenly;
-  margin-top: 100px;
 }
 
 .main__div--banner > * {
@@ -213,19 +280,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 94%;
   height: 10%;
   overflow: hidden;
   background-color: #7a5f45;
   color: #fafafa;
-  padding-left: 16px;
 }
 
-.main__div--sale > h2 {
-  width: 50%;
+.div--sale > h2 {
+  font-size: large;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
-.main__div--sale > p {
+.div--sale > p {
+  font-size: small;
   line-height: 25px;
 }
 
@@ -256,25 +325,28 @@ body {
   justify-content: space-between;
   width: 70%;
   height: 700px;
+  margin: auto;
 }
 
 .main__a--imagesStory {
   background: url(/assets/images/home_page/main_our_story.jpg);
   background-size: cover;
   text-decoration: none;
-  width: 90%;
+  width: 100%;
   height: 48%;
   color: #fafafa;
-  padding-left: 24px;
   transition: all ease-in-out 0.5s;
+}
+
+.main__a--imagesStory h3 {
+  margin-left: 16px;
 }
 
 .section__div--rowImage {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 45%;
-  margin-top: -20px;
+  height: 46%;
 }
 
 .div__a--imagesRecipe {
@@ -287,13 +359,9 @@ body {
   background-size: cover;
 }
 
-.div__a--imagesIngredient {
-  margin-right: 65px;
-}
-
 .div__a--imagesRecipe,
 .div__a--imagesIngredient {
-  width: 42%;
+  width: 46%;
   text-decoration: none;
   background-repeat: no-repeat;
   color: #fafafa;
@@ -309,6 +377,14 @@ body {
 }
 
 /* ****************************************** PRODUCT PAGE *******************************************/
+
+.banner {
+  background: url(/assets/images/product_page/product_banner.jpg);
+  background-size: cover;
+  height: 550px;
+  overflow: hidden;
+  margin-top: -10px;
+}
 
 .listProducts {
   display: grid;
